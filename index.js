@@ -15,7 +15,8 @@ function getData(url) {
 
 getData("https://animechan.io/api/v1/quotes/random")
   .then((data) => {
-    console.log("Dog Facts:", data);
+    console.log("Content:", data.data.content);
+    console.log("Anime Name:", data.data.anime.name);
   })
   .catch((error) => {
     console.error(error);
